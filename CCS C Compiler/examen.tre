@@ -1,0 +1,13 @@
+ÀÄexamen
+   ÃÄMAIN  0/190  Ram=1
+   ³  ÃÄ@cinit1  (Inline)  Ram=1
+   ³  ÃÄ@delay_ms1  0/38  Ram=1
+   ³  ÃÄ@delay_ms1  0/38  Ram=1
+   ³  ÃÄ@PRINTF_D_9600_31766_31767  0/180  Ram=6
+   ³  ³  ÃÄ@DIV88  0/40  Ram=3
+   ³  ³  ÀÄ@DIV88  0/40  Ram=3
+   ³  ÀÄatoi  0/412  Ram=9
+   ³     ÀÄ@MUL88  0/76  Ram=2
+   ÃÄEXT_isr  0/18  Ram=0
+   ÃÄEXT1_isr  0/34  Ram=0
+   ÀÄRDA_isr  0/16  Ram=0

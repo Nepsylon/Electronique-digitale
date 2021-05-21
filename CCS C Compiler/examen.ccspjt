@@ -1,0 +1,22 @@
+[PROJECT]
+Target=examen.hex
+Processor_Text=PIC18F458
+CCSVerions=5.015
+Compiler=PCH
+CCSVersion=5.015
+[Target Data]
+FileList=examen.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[C:\Users\Christopher\Documents\Projet elec 2e\projet\examen]
+Type=4
+[mru-list]
+1=examen.c
+[Opened Files]
+1=examen.c
+2=
+[examen.c]
+Type=4
+[Units]
+Count=1
+1=examen (main)
