@@ -31,6 +31,8 @@ def invisible():
 root = Tk()
 root.geometry("400x300")
 
+invisible()
+
 Title = Label(root, text='Simulation du projet en éléctronique digitale')
 Title.pack()
 
