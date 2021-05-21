@@ -1,33 +1,38 @@
 from tkinter import *
 import serial
 
+#Connexion au port COM
 ser = serial.Serial()
 ser.baudrate = 9600
 ser.port = 'COM2'
 ser.open()
 print("Le port est pris : " + str(ser.is_open))
 
-root = Tk()
-root.geometry("400x300")
-
+#Fonction qui défini le seuil
 def Click():
-    read = E.get()
+    read = Box.get()
     ser.write(read.encode())
     return read
 
-Title = Label(root, text='Simulation du projet en éléctronique digitale')
-Title.pack()
-
-E = Entry(root, width=20)
-E.pack()
-
-Bt = Button(root, text='Entrez', command=Click)
-Bt.pack()
-
+#Fonction qui ferme la liason avec le port COM
 def fermeture():
     ser.close()
     print("Le port est pris : " + str(ser.is_open))
     root.destroy()
+
+#Partie graphique
+root = Tk()
+root.title=('Groupe 14')
+root.geometry("400x300")
+
+Title = Label(root, text='Simulation du projet en éléctronique digitale')
+Title.pack()
+
+Box = Entry(root, width=20)
+Box.pack()
+
+Btn = Button(root, text='Entrez', command=Click)
+Btn.pack()
 
 root.protocol("WM_DELETE_WINDOW", fermeture)
 root.mainloop()
